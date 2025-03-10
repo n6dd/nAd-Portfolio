@@ -1,23 +1,74 @@
-export default function Contact() {
-    return (
-      <div>
-        <h1>Contact</h1>
-        <p>
-          Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
-          Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
-          dictum. Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus
-          sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum nunc,
-          sed pretium risus rutrum eget. Nam consequat, ligula in faucibus
-          vestibulum, nisi justo laoreet risus, luctus luctus mi lacus sit amet
-          libero. Class aptent taciti sociosqu ad litora torquent per conubia
-          nostra, per inceptos himenaeos. Mauris pretium condimentum tellus eget
-          lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-          Donec placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum
-          in velit pellentesque vehicula sit amet at augue. Maecenas aliquam
-          bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
-          est ligula suscipit velit, sed bibendum turpis dui in sapien.
-        </p>
-      </div>
-    );
-  }
-  
+import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
+
+const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    emailjs.sendForm('service_st0eqe6', 'template_3xyxzlk', e.target, 'pgErI4fgMKMaTUNwn')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+  };
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  return (
+    <section>
+      <h1>Contact Me</h1>
+      <form onSubmit={handleSubmit}>
+        <div className="mb-3">
+          <label htmlFor="name" className="form-label">Name</label>
+          <input
+            type="text"
+            className="form-control"
+            id="name"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="mb-3">
+          <label htmlFor="email" className="form-label">Email address</label>
+          <input
+            type="email"
+            className="form-control"
+            id="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="mb-3">
+          <label htmlFor="message" className="form-label">Message</label>
+          <textarea
+            className="form-control"
+            id="message"
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            rows="4"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" className="btn btn-primary">Submit</button>
+      </form>
+    </section>
+  );
+};
+
+export default Contact;

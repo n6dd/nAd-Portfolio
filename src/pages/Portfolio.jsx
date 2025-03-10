@@ -1,21 +1,35 @@
+import { Card, Button } from 'react-bootstrap';
+
 export default function Portfolio() {
     return (
-      <div>
-        <h1>Portfolio</h1>
-        <p>
-          Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-          molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-          magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-          efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-          mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-          posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-          faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-          ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-          dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-          conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-          rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-        </p>
-      </div>
+    <div className="portfolio-container">
+        <div className="page-header">
+            <h1>Portfolio</h1>
+        </div>
+        <div className="portfolio-content">
+            <Card style={{ width: '18rem' }}>
+                <Card.Img variant="top" src="" />
+                <Card.Body>
+                    <Button variant="secondary">Go to project</Button>
+                    <Button variant="secondary">Go to github</Button>
+                </Card.Body>
+            </Card>
+            <Card style={{ width: '18rem' }}>
+                <Card.Img variant="top" src="https://via.placeholder.com/150" />
+                <Card.Body>
+                    <Button variant="secondary">Go to project</Button>
+                    <Button variant="secondary">Go to github</Button>
+                </Card.Body>
+            </Card>
+            <Card style={{ width: '18rem' }}>
+                <Card.Img variant="top" src="https://via.placeholder.com/150" />
+                <Card.Body>
+                    <Button variant="secondary">Go to project</Button>
+                    <Button variant="secondary">Go to github</Button>
+                </Card.Body>
+            </Card>
+        </div>
+    </div>
     );
-  }
+}
   
