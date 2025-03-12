@@ -22,7 +22,7 @@ export default function About() {
       </p>
 
       <p>
-      In my free time I love to play video games, golf and spend time with friends and family. Some games that I enjoy playing are Valorant, CSGO,
+      In my free time I love to play video games, golf, work on my cars and spend time with friends and family. Some games that I enjoy playing are Valorant, CSGO,
       Rocket League and Call of Duty. My favorite golf course that I've ever played has been Lookout Mountain Golf Club in Phoenix, Arizona.
       </p>
 

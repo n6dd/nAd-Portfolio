@@ -1,0 +1,27 @@
+footer {
+    background-color: #b700ff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: relative;  
+    bottom: 0;
+    margin-top: auto;  
+    z-index: 10;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.footer-icon:hover {
+    transform: scale(1.1);
+}
