@@ -17,9 +17,9 @@ function App() {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto">
                             <Nav.Link as={Link} to="/">About</Nav.Link>
-                            <Nav.Link as={Link} to="/resume">Resume</Nav.Link>
                             <Nav.Link as={Link} to="/portfolio">Portfolio</Nav.Link>
                             <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+                            <Nav.Link as={Link} to="/resume">Resume</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
@@ -27,9 +27,9 @@ function App() {
             <Container className="mt-4">
                 <Routes>
                     <Route path="/" element={<About />} />
-                    <Route path="/resume" element={<Resume />} />
                     <Route path="/portfolio" element={<Portfolio />} />
                     <Route path="/contact" element={<Contact />} />
+                    <Route path="/resume" element={<Resume />} />
                 </Routes>
             </Container>
         </Router>

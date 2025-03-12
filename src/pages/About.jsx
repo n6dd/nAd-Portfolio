@@ -1,10 +1,15 @@
 export default function About() {
-  return <div className="page-container">
-    <div className="page-header">
+  return (
+    <section>
       <h1>About me</h1>
-    </div>
     <div className="about-image">
-      <img src="https://img.icons8.com/?size=100&id=118880&format=png&color=000000" alt="Profile" />
+      <img src="./images/me.jpeg" alt="Profile" 
+      style={{
+        width: '150px',
+        height: '150px',
+        borderRadius: '50%',
+        objectFit: 'cover'
+      }} />
     </div>
     <div className="page-content">
       <p> Hi, I'm Nicholas, an aspiring full-stack software developer on a journey to expand my skills and build impactful applications. 
@@ -17,9 +22,15 @@ export default function About() {
       </p>
 
       <p>
-      Thanks for stopping by my portfolio, and I look forward to connecting and learning more with the developer community!      
+      In my free time I love to play video games, golf and spend time with friends and family. Some games that I enjoy playing are Valorant, CSGO,
+      Rocket League and Call of Duty. My favorite golf course that I've ever played has been Lookout Mountain Golf Club in Phoenix, Arizona.
+      </p>
+
+      <p>
+      Thanks for stopping by my portfolio, and I look forward to connecting and learning more with the developer community and more!      
       </p>
     </div>
-  </div>;
-}
+  </section>
+    );
+};
   

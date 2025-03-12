@@ -9,6 +9,7 @@ body {
   background-position: center;
   background-size: cover;
   height: 180px;
+  background-repeat: inherit;
 }
 
 .navbar .navbar-brand {
@@ -67,12 +68,26 @@ input:focus, textarea:focus {
 
 .btn-primary {
   background-color: #fff; 
-  border-color: #800080;
+  border-color: #00ffd5;
 }
 
 .btn-primary:hover {
-  background-color: #9b2ca3; 
-  border-color: #9b2ca3;
+  background-color: #005e3e; 
+  border-color: #005e3e;
+}
+
+.text-button {
+  background: none !important;
+  border: none !important;
+  color: #00ffd5;
+  cursor: pointer;
+  text-align: left;
+  font-size: 30px;
+  text-decoration:underline
+}
+
+.text-button:hover {
+  color: #005e3e; 
 }
 
 section {
@@ -85,6 +100,91 @@ section {
 
 .page-content {
   font-family: 'DejaVu Sans Mono' monospace;
+}
+
+.portfolio-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px; 
+  justify-content: center;
+  height: 1250px;
+  width: auto;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px; 
+  align-items: center;
+}
+
+.no-bg-hover {
+  background: none !important;
+  border: none !important;
+  padding: 0;
+}
+
+.no-bg-hover:hover,
+.no-bg-hover:focus {
+    background: none !important;
+    box-shadow: none !important;
+}
+
+.project-card {
+  background-size: cover;        
+  background-position: center;   
+  background-repeat: no-repeat;   
+  height: 100%;                   
+  border-radius: 10px;           
+}
+
+.card-1 {
+  background-image: url("https://img.freepik.com/free-photo/fried-chicken-breast-with-vegetables_140725-4649.jpg?t=st=1741813689~exp=1741817289~hmac=cf945d841a045d45de1e7b1f70a39ec8c7a874f2a1077d5b3479ff4d90ad7235&w=1060");
+  background-size: fill;
+  background-position: center;
+}
+
+.card-2 {
+  background-image: url("https://images.nationalgeographic.org/image/upload/t_edhub_resource_key_image/v1638892168/EducationHub/photos/lightning-grand-canyon.jpg");
+  background-size: fill;
+  background-position: center;
+}
+
+.card-3 {
+  background-image: url("https://media.istockphoto.com/id/1312850689/vector/matrix-background-binary-code-texture-falling-green-numbers-data-visualization-concept.jpg?s=612x612&w=0&k=20&c=l1xAzPJUjbROnui5McM-_vbDswAg5OoSzwJuFpdj3WE=");
+  background-size: fill;
+  background-position: center;
+}
+
+.card-4 {
+  background-image: url("https://www.theworkersunion.com/wp-content/uploads/2022/11/factory-workers-from-all-sectors.jpg");
+  background-size: fill;
+  background-position: center;
+}
+
+.card-5 {
+  background-image: url("https://dealer.porsche.com/ca/oakville/en-CA/News-and-Events/-/media/Project/DealerWebsites/Canada/Oakville/Stage%20Header/News%20and%20Events/News-Details/Porsche-911-GT3-RS-October-2022/porsche-centre-oakville-new-911-gt3-rs-1-oct-2022.png");
+  background-size: fill;
+  background-position: center;
+}
+
+.card-6 {
+  background-image: url("https://www.athens.edu/wp-content/uploads/2023/09/Digital-Marketing-1250x653.jpeg");
+  background-size: fill;
+  background-position: center;
+}
+
+.non-click {
+  padding-left: 10px;
+  color: #00ffd5;
+  text-align: left;
+  font-size: 30px;
 }
 
 @media (max-width: 767px) {
