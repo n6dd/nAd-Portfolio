@@ -3,7 +3,7 @@ import React from 'react';
 const Resume = () => {
   return (
     <section className="resume-container">
-      <h1>Resume</h1>
+      <header>Resume</header>
       <div className="download-link">
         <a href="./images/Nicholas_Resume.png" download="Nicholas_Resume.png" className="download-button">
           Download My Resume
