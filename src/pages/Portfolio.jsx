@@ -3,7 +3,7 @@ import { Card, Button } from 'react-bootstrap';
 export default function Portfolio() {
 
     const handleMealMuseClick = () => {
-        window.open("https://alexis-menendez.github.io/Meal-Muse/", "_blank");
+        window.open("https://alexis-menendez.github.io/Project-1-Meal-Muse/", "_blank");
     };
 
     const handleWeatherForecastClick = () => {

@@ -5,7 +5,7 @@ const Resume = () => {
     <section className="resume-container">
       <h1>Resume</h1>
       <div className="download-link">
-        <a href="/path/to/your/resume.pdf" download="Nicholas_Resume.pdf" className="download-button">
+        <a href="./images/Nicholas_Resume.png" download="Nicholas_Resume.png" className="download-button">
           Download My Resume
         </a>
       </div>

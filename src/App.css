@@ -36,7 +36,7 @@ html, body {
 .navbar .navbar-brand {
   display: flex;
   text-align: left;
-  color: #b700ff;
+  color: #888383;
   font-size: 3rem;
   font-display: bold;
   text-shadow: 2px 2px 2px #000;
@@ -44,7 +44,7 @@ html, body {
 .navbar .nav-link {
   display: flex;
   text-align: right;
-  color: #b700ff;
+  color: #888383;
   font-size: 1.5rem;
   font-display: bold;
   text-shadow: 2px 2px 2px #000;
@@ -207,7 +207,7 @@ section {
 }
 
 .resume-container {
-  background-color: #1e1e1e;
+  background-color: #888383;
   color: #fff;
   padding: 20px;
   border-radius: 10px;
@@ -221,7 +221,7 @@ section {
 
 h2 {
   font-size: 1.5rem;
-  color: #b700ff;
+  color: #6ddb3a;
 }
 
 ul {
@@ -239,8 +239,8 @@ ul li {
 }
 
 .download-button {
-  background-color: #b700ff;
-  color: #1e1e1e;
+  background-color: #000000;
+  color: #888383;
   padding: 10px 20px;
   font-size: 1.1rem;
   border-radius: 5px;
@@ -248,7 +248,7 @@ ul li {
 }
 
 .download-button:hover {
-  background-color: #1f3f10;
+  background-color: #6ddb3a;
 }
 
 .mb-3 {
